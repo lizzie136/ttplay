@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Time to Play</title>
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+  </head>
+
+  <body>
+    <section class="row search">
+      <form class="col s12" id="search-form">
+        <div class="row">
+          <div class="input-field col s6">
+            <input
+              placeholder="Enter the video URL"
+              id="url"
+              name="url"
+              type="url"
+              class="validate"
+            />
+            <label for="url">Resource URL</label>
+          </div>
+          <div class="input-field col s2">
+            <input placeholder="00" name="time-minutes" type="number" max=
+            class="validate" />
+            <label for="time">Minute to hit</label>
+          </div>
+          <div class="input-field col s1 center">
+            <span>:</span>
+          </div>
+          <div class="input-field col s2">
+            <input placeholder="00" name="time-seconds" type="number" max=
+            class="validate" />
+            <label for="time">Secondt to hit</label>
+          </div>
+        </div>
+        <input type="submit" hidden />
+      </form>
+    </section>
+    <div id="player"></div>
+
+    <!-- <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/Pck5JcnkYYs?autoplay=1"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <audio></audio> -->
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
